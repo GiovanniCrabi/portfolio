@@ -7,7 +7,7 @@ export const Container = styled.section`
   gap: 2rem;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 5rem;
 
   > img {
     height: 32rem;
@@ -50,12 +50,12 @@ export const TextContainer = styled.section`
   width: 90%;
 
   h1 {
-    font-size: 5rem;
+    font-size: 8rem;
     color: ${({theme}) => theme.primary };
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
     color: ${({theme}) => theme.secondary };
   }
@@ -89,7 +89,7 @@ export const InfosContainer = styled.section `
 
 export const CodeItem = styled.pre`
   background: ${({theme}) => theme.gradient};
-  padding: 1rem;
+  padding: 2rem;
   font-family: 'JetBrains Mono', monospace;
   font-weight: 300;
   color: #fff;
@@ -97,24 +97,22 @@ export const CodeItem = styled.pre`
   align-self: flex-start;
   transition: 1s;
 
-  @media (max-width: 1450) {
+  @media (max-width: 1450px) {
     width: 18rem;
-    padding: 0.8rem;
+    padding: 1.5rem;
     font-size: 0.8rem;
   }
 
-  @media (max-width: 1000) {
+  @media (max-width: 1000px) {
     width: 100%;
-    padding: 1.5rem;
-    font-size: 0.8rem;
   }
 
   &:hover {
     filter: brightness(1.2);
   }
 
-  .left {
-    align-self: left;
+  &:last-child {
+    align-self: flex-end;
   }
 
   > div {
