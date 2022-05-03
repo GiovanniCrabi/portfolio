@@ -13,7 +13,7 @@ export const Container = styled.section`
     height: 32rem;
     width: 40rem;
     flex: 1;
-    opacity: calc(0.8);
+    opacity: calc(0.4);
   }
 
   > div {
@@ -37,7 +37,7 @@ export const Container = styled.section`
     }
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 760px) {
     flex-direction: column-reverse;
     > div {
       width: 100%;
@@ -96,6 +96,8 @@ export const CodeItem = styled.pre`
   width: 24rem;
   align-self: flex-start;
   transition: 1s;
+  z-index: 10;
+
 
   @media (max-width: 1450px) {
     width: 18rem;

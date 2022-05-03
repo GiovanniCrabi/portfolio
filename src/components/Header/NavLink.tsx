@@ -11,8 +11,6 @@ interface Props {
 export default function NavLink({title, path}: Props) {
   const router = useRouter();
 
-
-
   const isActive = router.asPath === path;
 
   return (
