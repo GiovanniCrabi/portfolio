@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable prettier/prettier */
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import { CodeItem, Container, InfosContainer, TextContainer } from './styles';
 
 import photo from '../../assets/images/photo.png';
@@ -17,21 +20,19 @@ function HomeHero() {
             <span className='comment'>//Apresentação</span>
             <span className='purple'>Infos</span> {'\u007B'}
             <div>
-              Name: <span className='blue'>Giovanni,</span> 
+              Title: <span className='blue'>majoring in computer science,</span>
             </div>
-            <div>
-              Last Name: <span className='blue'>Crabi</span>
-            </div>
+
             {'\u007D'}
           </CodeItem>
           <CodeItem>
             <span className='purple'>Cargo</span> {'\u007B'}
             <div className='left'>
-              Função: <span className='blue'>Front-End Developer,</span> 
+              Função: <span className='blue'>Front-End Developer,</span>
             </div>
             {'\u007D'}
           </CodeItem>
-          
+
           </InfosContainer>
       </div>
     </Container>
