@@ -9,7 +9,7 @@ export const Container = styled.section`
     gap: 1.5rem;
 
     padding-bottom: 8rem;
-    border-bottom: 3px solid ${({theme}) => theme.primary };
+    border-bottom: 3px solid ${({ theme }) => theme.primary};
 
     @media (max-width: 1000px) {
       gap: 1rem;
@@ -25,7 +25,7 @@ export const Container = styled.section`
 
 export const ItemContainer = styled.div`
   > div {
-    background: ${({theme}) => theme.gradient };
+    background: ${({ theme }) => theme.gradient};
     padding: 1rem;
     padding-top: 2.5rem;
     height: 20rem;
@@ -37,20 +37,20 @@ export const ItemContainer = styled.div`
     transition: 0.5s;
 
     h1 {
-      color: ${({theme}) => theme.primary };
+      color: ${({ theme }) => theme.primary};
       font-size: 2rem;
       margin-bottom: 1.5rem;
     }
 
     h2 {
-      color: ${({theme}) => theme.secondary };
+      color: ${({ theme }) => theme.secondary};
       font-size: 1.5rem;
       font-weight: 300;
       margin-bottom: 1rem;
     }
 
     p {
-      color: ${({theme}) => theme.textLight };
+      color: ${({ theme }) => theme.textLight};
       font-size: 1rem;
       font-weight: 300;
     }
@@ -68,7 +68,46 @@ export const ItemContainer = styled.div`
   @media (max-width: 1000px) {
     > div {
       height: 15rem;
-      
+      padding-top: 1.5rem;
+
+      h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
     }
   }
-`; 
+
+  @media (max-width: 700px) {
+    &:nth-child(even) > div {
+      margin-top: 0;
+    }
+    &:hover > div {
+      transform: translateY(0);
+    }
+
+    > div {
+      height: auto;
+      padding-top: 2rem;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+`;

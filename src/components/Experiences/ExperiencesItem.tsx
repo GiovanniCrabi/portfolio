@@ -1,14 +1,23 @@
-import styled from "styled-components"
-import { ItemContainer } from "./styles"
+import { ItemContainer } from './styles';
 
-export default function ExperiencesItem() {
+interface ExperiencesItemProps {
+  year: number;
+  title: string;
+  description: string;
+}
+
+export default function ExperiencesItem({
+  year,
+  title,
+  description
+}: ExperiencesItemProps) {
   return (
-     <ItemContainer>
-    <div>
-      <h1>2021</h1>
-      <h2>Dev FrontEnd</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, neque.</p>
-    </div>
-  </ItemContainer>
-  )
+    <ItemContainer>
+      <div>
+        <h1>{year}</h1>
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </div>
+    </ItemContainer>
+  );
 }
